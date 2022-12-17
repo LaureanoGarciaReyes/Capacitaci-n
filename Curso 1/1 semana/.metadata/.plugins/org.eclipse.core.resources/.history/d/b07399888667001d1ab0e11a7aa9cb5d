@@ -1,0 +1,27 @@
+
+public class Profesor {
+	
+	String matricula; // key,
+	String nombre;
+	String app;
+	int edad;
+	
+	
+	//Constructor vacio
+	public Profesor() {
+		
+	}
+
+
+	public Profesor(String matricula) {
+		this.matricula = matricula;
+		
+		
+		
+		
+	}
+	
+	
+	
+
+}

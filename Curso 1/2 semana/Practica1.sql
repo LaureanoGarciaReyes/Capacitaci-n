@@ -1,0 +1,178 @@
+--create data base nombre;
+
+--Crear tabla
+
+CREATE TABLE PERRO_2(
+ID_PERRO NUMBER, 
+NOMBRE NVARCHAR2(100),
+RAZA NVARCHAR2(100)
+);
+
+-- ELIMINAR TABLA
+
+DROP TABLE PERRO_2;
+
+--CREAR LA LLAVE PRIMARIA 1
+
+CREATE TABLE AUTO_P(
+ID_AUTO NUMBER PRIMARY KEY,
+MODELO NVARCHAR2(100),
+PRECIO NUMBER,
+MARCA NVARCHAR2(100)
+);
+
+
+--CREAR LA LLAVE PRIMARIA 2
+
+CREATE TABLE AUTO_M2(
+ID_AUTO NUMBER ,
+MODELO NVARCHAR2(100),
+PRECIO NUMBER,
+MARCA NVARCHAR2(100),
+CONSTRAINT PK_AUTO_M2 PRIMARY KEY(ID_AUTO)
+);
+
+--CREAR LA LLAVE PRIMARIA 3
+
+CREATE TABLE AUTO_M3(
+ID_AUTO NUMBER ,
+MODELO NVARCHAR2(100),
+PRECIO NUMBER,
+MARCA NVARCHAR2(100),
+PRIMARY KEY(ID_AUTO)
+);
+
+
+CREATE TABLE ESTADOS_M(
+ID_ESTADO NUMBER PRIMARY KEY,
+NOMRE NVARCHAR2(100),
+CAPITAL NVARCHAR2(100),
+HABITANTES NUMBER,
+PAIS NVARCHAR2(100)
+);
+
+--INSET INTO
+
+INSERT INTO ESTADOS_M VALUES(1, 'Puebla', 'Puebla', 500, 'Mexico');
+INSERT INTO ESTADOS_M VALUES(2, 'Tlaxcala', 'Tlaxcala', 60, 'Mexico');
+INSERT INTO ESTADOS_M VALUES(3, 'Veracruz', 'Xalapa', 1200, 'Mexico');
+INSERT INTO ESTADOS_M VALUES(4, 'Hidalgo', 'Pachuca', 1500, 'Mexico');
+INSERT INTO ESTADOS_M VALUES(5, 'Texas', 'Dallas', 590, 'Usa');
+INSERT INTO ESTADOS_M VALUES(6, 'Angeles', 'Nueva york',400,null);
+
+
+--SELECT
+--FORMA 1
+
+SELECT ID_ESTADO,NOMBRE,CAPITAL,HABITANTES,PAIS FROM ESTADOS_M;
+
+--FORMA 2
+select*from Estados_M;
+
+--update--actualizar con el id de la extencion
+
+UPDATE ESTADOS_M SET HABITANTES = 101 WHERE ID_ESTADO = 3;
+
+UPDATE ESTADOS_M SET CAPITAL = 'HERMOSILLO' where ID_ESTADO = 3;
+
+--DELETED -ELIMINAR
+
+DELETE FROM ESTADOS_M WHERE ID_ESTADO= 5;
+
+--MOSTRAR LOS REGISTROS QUE SU ID SE 2 O 3
+
+SELECT*FROM ESTADOS_M WHERE ID_ESTADO=2 OR ID_ESTADO=3;
+
+--MOSTRAR LOS REGISTROS DE SU PAIS SEA MEXICO Y SU ID SEA 2
+SELECT*FROM ESTADOS_M WHERE ID_ESTADO=3 AND PAIS = 'Mexico';
+
+---MOSTRAR LOS REGISTROS EN ORDEN POR SUS HABITANTES DE MAYOR A MENOR
+
+SELECT*FROM ESTADOS_M ORDER BY HABITANTES ASC;
+
+SELECT*FROM ESTADOS_M ORDER BY HABITANTES DESC;
+
+--MOSTRAR LOS REGISTROS EN ORDENADOS POR SU NOMBRE EN ORDEN ALFABETICO
+SELECT*FROM ESTADOS_M ORDER BY NOMBRE ASC;
+
+
+--BUSCAR LOS ESTADOS DE SU NOMBRE EMPIECE POR UNA T
+SELECT*FROM ESTADOS_M WHERE NOMBRE LIKE'T%';
+
+--BUSCAR LOS ESTADOS DE SU NOMBRE EMPIECE POR UNA s
+SELECT*FROM ESTADOS_M WHERE NOMBRE LIKE'%s';
+
+--BUSCAR LOS ESTADOS DE SU NOMBRE contengan POR UNA e
+SELECT*FROM ESTADOS_M WHERE NOMBRE LIKE'%e%';
+
+--buscar los estados que su pais sea null
+select*from estados_m where pais is null;
+
+
+--buscar los estados que su pais sea no null
+select*from estados_m where pais is not null;
+
+
+--agrupar los paises 
+select pais from estados_m group by pais;
+
+--busqueda de los paises que se a menor o igual  a 75
+
+select*from estados_m where habitantes<=75;
+
+
+---buscar los paises que sus habitantes sea entre 70 y 120
+select*from estados_m where habitantes>=70 and habitantes<=120;
+
+select*from estados_m where habitantes between 70 and 120;
+
+--buscar los registros que su id sea 1,2,3,4,5
+
+SELECT * FROM ESTADOS_M WHERE ID_ESTADO=1 OR ID_ESTADO=2 OR ID_ESTADO=3 OR ID_ESTADO=4 OR ID_ESTADO=5 ;
+
+
+SELECT * FROM ESTADOS_M WHERE  ID_ESTADO  IN(1,2,3,4,5);
+
+
+---PRACTICA
+DROP TABLE AUTO_M20;
+
+CREATE TABLE AUTO_M20(
+ID_AUTO NUMBER PRIMARY KEY,
+MODELO NVARCHAR2(100),
+PRECIO NUMBER,
+MARCA NVARCHAR2(100),
+TIPO NVARCHAR2(100)
+);
+
+INSERT INTO AUTO_M20 VALUES(1, 'Taos', 55000, 'ww', 'Suv');
+INSERT INTO AUTO_M20 VALUES(2, 'Explorer', 73000, 'Ford', 'Camioneta');
+INSERT INTO AUTO_M20 VALUES(3, 'Silverado', 65000, 'Chevrolet', 'Camioneta');
+INSERT INTO AUTO_M20 VALUES(4, 'A3', 56000, 'Mazdan', 'Sedad');
+INSERT INTO AUTO_M20 VALUES(5, 'Aveo', 120000, 'Chebrolet', 'Sedad');
+INSERT INTO AUTO_M20 VALUES(6, 'Jeta', 12500, 'ww', 'Sedan');
+INSERT INTO AUTO_M20 VALUES(7, 'Tiwan', 578000, 'ww', null);
+
+select * from auto_m20 order by id_auto;
+
+--buscar los registros id 3, 1, 5,7
+SELECT * FROM AUTO_M20 WHERE  ID_AUTO  IN(1,3,5,7);
+--buscar los registror ordenados por su  precio de mayor a menor
+SELECT*FROM AUTO_M20 ORDER BY PRECIO ASC;
+SELECT*FROM AUTO_M20 ORDER BY PRECIO DESC;
+--buscar los autos que su tipo sea null
+select*from AUTO_M20 where tipo is null;
+select*from AUTO_M20 where TIPO is not null;
+--Buscar los autor que su marca tenga la letra v al final al inicio o etc.
+SELECT*FROM AUTO_M20 WHERE MARCA LIKE'V%';
+--buscar los autos que su precio  esten entre 5000 y 75000
+select*from AUTO_M20 where PRECIO between 500 and 120000;
+---buscar los autos que su modelo sea taous, a3, tiwan
+SELECT * FROM AUTO_M20 WHERE  MODELO  IN('A3','Aveo','Tiwan');
+
+
+
+
+
+
+

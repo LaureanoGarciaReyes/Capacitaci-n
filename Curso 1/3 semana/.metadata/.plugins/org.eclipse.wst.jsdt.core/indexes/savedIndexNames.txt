@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\Lenovo\OneDrive\Documentos\Capacitación\3 semana\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2696045222.index
+650153411.index
+1645197179.index
+1058516604.index
+379332074.index
+755304007.index

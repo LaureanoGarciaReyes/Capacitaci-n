@@ -1,0 +1,8 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="Verdura"><rhs name\="Verdura"/></lhs><lhs name\="Refreco"><rhs name\="Refreco"/></lhs><lhs name\="Torta"><rhs name\="Torta"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="Celular"><rhs name\="Celular"/></lhs><lhs name\="GeneroMusica"><rhs name\="GeneroMusica"/></lhs><lhs name\="Tipo"><rhs name\="Tipo"/></lhs><lhs name\="Desayuno"><rhs name\="Desayuno"/></lhs><lhs name\="VideoJuego"><rhs name\="VideoJuego"/></lhs><lhs name\="Padre"><rhs name\="Hijo"/></lhs><lhs name\="Hijo"><rhs name\="Hijo"/></lhs><lhs name\="Areupuerto"><rhs name\="Avion"/></lhs><lhs name\="Avion"><rhs name\="Avion"/></lhs><lhs name\="com.mx.entidad.Cancion"><rhs name\="com.mx.entidad.Cancion"/></lhs><lhs name\="com.mx.entidad.Alumno"><rhs name\="com.mx.entidad.Alumno"/></lhs><lhs name\="com.mx.entidad.Libro"><rhs name\="com.mx.entidad.Libro"/></lhs></history>
+content_assist_number_of_computers=12
+eclipse.preferences.version=1
+org.eclipse.jdt.ui.formatterprofiles.version=22
+spelling_locale_initialized=true
+typefilter_migrated_2=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

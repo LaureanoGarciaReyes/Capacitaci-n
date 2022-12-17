@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="Verdura"/>
+    <fullyQualifiedTypeName name="Refreco"/>
+    <fullyQualifiedTypeName name="Torta"/>
+    <fullyQualifiedTypeName name="Celular"/>
+    <fullyQualifiedTypeName name="GeneroMusica"/>
+    <fullyQualifiedTypeName name="Tipo"/>
+    <fullyQualifiedTypeName name="Desayuno"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="VideoJuego"/>
+    <fullyQualifiedTypeName name="Hijo"/>
+    <fullyQualifiedTypeName name="Avion"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.mx.implemetacion.impAlumno"/>
+    <fullyQualifiedTypeName name="com.mx.implemetacion.impCancion"/>
+    <fullyQualifiedTypeName name="com.mx.principal.Metodos"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="com.mx.implementacion.ImpCancion"/>
+    <fullyQualifiedTypeName name="com.mx.implementacion.ImpLibro"/>
+    <fullyQualifiedTypeName name="com.mx.entidad.Alumno"/>
+    <fullyQualifiedTypeName name="com.mx.entidad.Cancion"/>
+    <fullyQualifiedTypeName name="com.mx.entidad.Libro"/>
+    <fullyQualifiedTypeName name="com.mx.implementacion.ImpAlumno"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,29 @@
+
+public class Alumno {
+
+	String matricula; // key,
+	String nombre;
+	String app;
+	int edad;
+
+	// Constructor vacio
+	public Alumno() {
+
+	}
+
+    // key
+	public Alumno(String matricula) {
+		this.matricula = matricula;
+
+	}
+
+	// Constructor completo
+	public Alumno(String matricula, String nombre, String app, int edad) {
+		super();
+		this.matricula = matricula;
+		this.nombre = nombre;
+		this.app = app;
+		this.edad = edad;
+	}
+
+}

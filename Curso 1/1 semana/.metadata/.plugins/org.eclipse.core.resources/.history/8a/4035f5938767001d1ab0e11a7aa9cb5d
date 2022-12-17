@@ -1,0 +1,9 @@
+
+public class Alumno {
+	
+	String matricula; // key,
+	String nombre;
+	String app;
+	int edad;
+
+}

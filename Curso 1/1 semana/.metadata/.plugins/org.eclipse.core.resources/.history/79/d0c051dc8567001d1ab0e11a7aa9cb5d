@@ -1,0 +1,9 @@
+
+public class Profesor {
+	
+	String matricula; // key,
+	String nombre;
+	String app;
+	int edad;
+
+}

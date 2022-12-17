@@ -1,0 +1,20 @@
+package com.mx.controller;
+
+import com.mx.dao.ImplementacionDao;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ImplementacionDao imp = new ImplementacionDao();
+		
+		// metodo listar 
+		System.out.println("la lista contiene -> "+imp.listar());
+      
+		
+	     // clientes
+		Clientes clientes = new Clientes(1,'LORENZO','JUAREZ','CARRANZA',2221234567,'lorenzo@gmail.com',0);
+	}
+
+}

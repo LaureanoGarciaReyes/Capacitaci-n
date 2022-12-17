@@ -1,0 +1,26 @@
+INDEX VERSION 1.131+C:\Users\Lenovo\OneDrive\Documentos\Capacitación\1 semana\.metadata\.plugins\org.eclipse.jdt.core
+914287006.index
+3131321443.index
+222742284.index
+3210638496.index
+1828426168.index
+4164802456.index
+263265558.index
+2489134877.index
+4243150423.index
+3779959079.index
+1536729997.index
+1865797976.index
+3637742805.index
+45101913.index
+4294589318.index
+1926635278.index
+1497578568.index
+477669098.index
+503983620.index
+587492154.index
+485099434.index
+1833533663.index
+1028081790.index
+3529962976.index
+1406872004.index
